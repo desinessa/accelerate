@@ -27,7 +27,95 @@ body {
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+.menu-top-nav-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight:'100';
+	font-family:'montserrat';
+    width: 100%;
+}
+.menu-top-nav-container ul li {display: inline-block; margin-right: 40px;}
+.menu-top-nav-container ul li a:hover {text-decoration: underline;}
 
+.menu-top-nav-container ul li.current-menu-item {font-weight: bold}
+
+/*
+<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+    <div class="menu-top-nav-container">
+        <ul id="menu-top-nav" class="nav-menu">
+            <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10">
+                <a href="http://localhost:8888/accelerate/blog/">Blog</a>
+            </li>
+            <li id="menu-item-47346" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-47344 current_page_item menu-item-47346">
+                <a href="http://localhost:8888/accelerate/contact/">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+/* Case Studies on Homepage – section.featured-work */
+
+.featured-work {
+    text-align: center; font-family: 'Montserrat'; 
+    margin-top: 20px 0 40px 0; 
+}
+.site-content {
+    background-color: ;
+}
+.featured-work h4 {
+    font-size: 90%; text-transform: uppercase; color: #666666; margin-top: 0;
+}
+.featured-case-studies {
+    /*background-color: #dddddd;*/
+}
+.individual-case-study {
+    float: left; width: 300px; margin-right: 20px; 
+}
+.individual-case-study > :last-child {margin-right: 0 !important; }
+
+.individual-case-study h3 {
+    font-size: 95%; color: #666666; margin-top: 20px;
+}
+
+
+/* Blog Post on Homepage – section.recent-posts */
+
+.blog-post {
+    margin: 40px 0; 
+}
+.blog-post a.read-more-link {font-size: 12px; }
+/*
+<section class="featured-work">
+    <div class="site-content">
+        <h4>Featured Work</h4>
+        <div class="featured-case-studies">
+            <div class="individual-case-study">
+                <figure></figure>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recent-posts">
+    <div class="site-content">
+        <div class="blog-post">
+            <h4>From the Blog</h4>
+             <h2><?php the_title(); ?></h2>
+                <?php the_excerpt(); ?> 
+                <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
+        </div>
+    </div>
+</section>
+
+*/
+
+
+
+/* Blog Post */
 
 .blog-post {
 	width: 50%;
@@ -62,6 +150,7 @@ body {
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
 
 /* Case Studies Styles */
 

@@ -24,7 +24,27 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
-
+<section class="featured-work">
+    <div class="site-content">
+        <h4>Featured Work</h4>
+        <div class="featured-case-studies">
+            <?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+            <?php while ( have_posts() ) : the_post(); 
+                $image_01 = get_field("image_01");
+                $size = "medium";
+            ?>
+            <div class="individual-case-study">
+                <figure>
+                    <?php echo wp_get_attachment_image($image_01, $size); ?>
+                </figure>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            </div>
+            <?php endwhile; ?> 
+            <?php wp_reset_query(); ?>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
 <section class="recent-posts">
     <div class="site-content">
         <div class="blog-post">
